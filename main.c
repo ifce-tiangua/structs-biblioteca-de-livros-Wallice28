@@ -18,7 +18,6 @@ pLivro livro_aloc(int qtde) {
     return (pLivro)malloc(qtde * sizeof(Livro));
 }
 
-s
 void livro_ler(pLivro livros, int qtde) {
     for (int i = 0; i < qtde; i++) {
         printf("Livro %d:\n", i + 1);
@@ -54,10 +53,8 @@ void livro_desaloca(pLivro livros) {
     free(livros);
 }
 
-
 int main() {
     int qtde;
-
     printf("Quantos livros deseja cadastrar? ");
     scanf("%d", &qtde);
 
@@ -80,4 +77,5 @@ int main() {
     livro_desaloca(livros);
 
     return 0;
+    
 }
